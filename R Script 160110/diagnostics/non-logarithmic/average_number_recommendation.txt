@@ -1,0 +1,48 @@
+Linear Model: average_number_recommendation 
+
+Linear Regression
+
+Call:
+lm(formula = preis ~ bewertung_durchschnitt + anzahl_bewertungen + 
+    prozentsatz_weiterempfehlungen, data = DealerWRatingData)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-15526.4  -3525.2    859.1   3551.2  26587.0 
+
+Coefficients:
+                                Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                    14797.119    192.797  76.750  < 2e-16 ***
+bewertung_durchschnitt           548.845     65.227   8.414  < 2e-16 ***
+anzahl_bewertungen                11.452      1.452   7.885 3.22e-15 ***
+prozentsatz_weiterempfehlungen     5.268      2.184   2.412   0.0159 *  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 5135 on 41129 degrees of freedom
+Multiple R-squared:  0.006954,	Adjusted R-squared:  0.006882 
+F-statistic: 96.01 on 3 and 41129 DF,  p-value: < 2.2e-16
+
+
+ANOVA of Linear Model
+Analysis of Variance Table
+
+Response: preis
+                                  Df     Sum Sq    Mean Sq F value    Pr(>F)    
+bewertung_durchschnitt             1 5.8191e+09 5819066386 220.711 < 2.2e-16 ***
+anzahl_bewertungen                 1 1.6211e+09 1621080334  61.486 4.566e-15 ***
+prozentsatz_weiterempfehlungen     1 1.5342e+08  153417665   5.819   0.01586 *  
+Residuals                      41129 1.0844e+12   26365052                      
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+
+Stepwise Regression
+Start:  AIC=702866.2
+preis ~ bewertung_durchschnitt + anzahl_bewertungen + prozentsatz_weiterempfehlungen
+
+                                 Df  Sum of Sq        RSS    AIC
+<none>                                         1.0844e+12 702866
+- prozentsatz_weiterempfehlungen  1  153417665 1.0845e+12 702870
+- anzahl_bewertungen              1 1639230536 1.0860e+12 702926
+- bewertung_durchschnitt          1 1866677669 1.0862e+12 702935

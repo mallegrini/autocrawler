@@ -1,0 +1,81 @@
+Linear Model: number_of_rating 
+
+Linear Regression
+
+Call:
+lm(formula = preis ~ age + kilometer + leistung + garantie + 
+    as.factor(fahrzeugart) + bewertung_durchschnitt + anzahl_bewertungen + 
+    prozentsatz_weiterempfehlungen, data = DealerWRatingData)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-10659.7  -1484.0   -249.8   1253.2  15527.6 
+
+Coefficients:
+                                       Estimate Std. Error  t value Pr(>|t|)    
+(Intercept)                          13114.2491    94.2671  139.118  < 2e-16 ***
+age                                   -101.4895     0.6108 -166.163  < 2e-16 ***
+kilometer                             -398.6762     3.8967 -102.311  < 2e-16 ***
+leistung                                94.4506     0.5065  186.485  < 2e-16 ***
+garantieTRUE                           152.6604    25.3594    6.020 1.76e-09 ***
+as.factor(fahrzeugart)Jahreswagen      368.2282    34.9358   10.540  < 2e-16 ***
+as.factor(fahrzeugart)Tageszulassung   285.3985    62.2924    4.582 4.63e-06 ***
+bewertung_durchschnitt                 115.5465    26.8194    4.308 1.65e-05 ***
+anzahl_bewertungen                      -2.6995     0.6021   -4.484 7.36e-06 ***
+prozentsatz_weiterempfehlungen           0.2132     0.8981    0.237    0.812    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 2108 on 41123 degrees of freedom
+Multiple R-squared:  0.8327,	Adjusted R-squared:  0.8327 
+F-statistic: 2.274e+04 on 9 and 41123 DF,  p-value: < 2.2e-16
+
+
+ANOVA of Linear Model
+Analysis of Variance Table
+
+Response: preis
+                                  Df     Sum Sq    Mean Sq    F value    Pr(>F)    
+age                                1 7.1285e+11 7.1285e+11 1.6046e+05 < 2.2e-16 ***
+kilometer                          1 4.0402e+10 4.0402e+10 9.0941e+03 < 2.2e-16 ***
+leistung                           1 1.5498e+11 1.5498e+11 3.4885e+04 < 2.2e-16 ***
+garantie                           1 2.0256e+08 2.0256e+08 4.5594e+01 1.474e-11 ***
+as.factor(fahrzeugart)             2 5.4999e+08 2.7500e+08 6.1899e+01 < 2.2e-16 ***
+bewertung_durchschnitt             1 1.8480e+08 1.8480e+08 4.1596e+01 1.135e-10 ***
+anzahl_bewertungen                 1 8.9460e+07 8.9460e+07 2.0137e+01 7.230e-06 ***
+prozentsatz_weiterempfehlungen     1 2.5031e+05 2.5031e+05 5.6300e-02    0.8124    
+Residuals                      41123 1.8270e+11 4.4427e+06                         
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+
+Stepwise Regression
+Start:  AIC=629623.3
+preis ~ age + kilometer + leistung + garantie + as.factor(fahrzeugart) + 
+    bewertung_durchschnitt + anzahl_bewertungen + prozentsatz_weiterempfehlungen
+
+                                 Df  Sum of Sq        RSS    AIC
+- prozentsatz_weiterempfehlungen  1 2.5031e+05 1.8270e+11 629621
+<none>                                         1.8270e+11 629623
+- bewertung_durchschnitt          1 8.2463e+07 1.8278e+11 629640
+- anzahl_bewertungen              1 8.9313e+07 1.8279e+11 629641
+- garantie                        1 1.6100e+08 1.8286e+11 629658
+- as.factor(fahrzeugart)          2 5.5146e+08 1.8325e+11 629743
+- kilometer                       1 4.6504e+10 2.2920e+11 638949
+- age                             1 1.2266e+11 3.0536e+11 650750
+- leistung                        1 1.5450e+11 3.3720e+11 654830
+
+Step:  AIC=629621.4
+preis ~ age + kilometer + leistung + garantie + as.factor(fahrzeugart) + 
+    bewertung_durchschnitt + anzahl_bewertungen
+
+                                 Df  Sum of Sq        RSS    AIC
+<none>                                         1.8270e+11 629621
++ prozentsatz_weiterempfehlungen  1 2.5031e+05 1.8270e+11 629623
+- anzahl_bewertungen              1 8.9460e+07 1.8279e+11 629640
+- garantie                        1 1.6202e+08 1.8286e+11 629656
+- bewertung_durchschnitt          1 1.8788e+08 1.8288e+11 629662
+- as.factor(fahrzeugart)          2 5.5125e+08 1.8325e+11 629741
+- kilometer                       1 4.6507e+10 2.2920e+11 638948
+- age                             1 1.2266e+11 3.0536e+11 650748
+- leistung                        1 1.5453e+11 3.3723e+11 654831

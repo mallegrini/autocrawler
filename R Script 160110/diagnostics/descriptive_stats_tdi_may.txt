@@ -1,0 +1,136 @@
+Descriptive Statistics of tdi_may
+         marke modell        preis    kilometer erstzulassung_monat erstzulassung_jahr     leistung treibstoff    mfk_monat
+nbr.val     NA     NA 2.017000e+03 2.017000e+03        2.017000e+03       2.017000e+03 2.017000e+03         NA  926.0000000
+nbr.null    NA     NA 0.000000e+00 0.000000e+00        0.000000e+00       0.000000e+00 0.000000e+00         NA    0.0000000
+nbr.na      NA     NA 0.000000e+00 0.000000e+00        0.000000e+00       0.000000e+00 0.000000e+00         NA 1091.0000000
+min         NA     NA 2.900000e+03 7.000000e+00        1.000000e+00       2.005000e+03 6.600000e+01         NA    1.0000000
+max         NA     NA 1.274970e+05 4.220000e+05        1.200000e+01       2.015000e+03 1.770000e+02         NA   12.0000000
+range       NA     NA 1.245970e+05 4.219930e+05        1.100000e+01       1.000000e+01 1.110000e+02         NA   11.0000000
+sum         NA     NA 3.464261e+07 1.320899e+08        1.291500e+04       4.057607e+06 1.754180e+05         NA 5903.0000000
+median      NA     NA 1.875000e+04 2.994200e+04        7.000000e+00       2.013000e+03 8.100000e+01         NA    6.0000000
+mean        NA     NA 1.717531e+04 6.548829e+04        6.403074e+00       2.011704e+03 8.696976e+01         NA    6.3747300
+SE.mean     NA     NA 1.606772e+02 1.490512e+03        7.275389e-02       6.307659e-02 3.250368e-01         NA    0.1086798
+CI.mean     NA     NA 3.151108e+02 2.923104e+03        1.426807e-01       1.237021e-01 6.374431e-01         NA    0.2132876
+var         NA     NA 5.207324e+07 4.481017e+09        1.067624e+01       8.024949e+00 2.130938e+02         NA   10.9372634
+std.dev     NA     NA 7.216179e+03 6.694040e+04        3.267452e+00       2.832834e+00 1.459773e+01         NA    3.3071534
+coef.var    NA     NA 4.201483e-01 1.022174e+00        5.102942e-01       1.408176e-03 1.678484e-01         NA    0.5187911
+             mfk_jahr angebotsnummer anbieter bewertung_durchschnitt bewertung_gesamteindruck bewertung_erreichbarkeit
+nbr.val  9.260000e+02             NA       NA           1.336000e+03             1.336000e+03             1.336000e+03
+nbr.null 0.000000e+00             NA       NA           2.490000e+02             2.490000e+02             2.550000e+02
+nbr.na   1.091000e+03             NA       NA           6.810000e+02             6.810000e+02             6.810000e+02
+min      2.012000e+03             NA       NA           0.000000e+00             0.000000e+00             0.000000e+00
+max      2.018000e+03             NA       NA           5.000000e+00             5.000000e+00             5.000000e+00
+range    6.000000e+00             NA       NA           5.000000e+00             5.000000e+00             5.000000e+00
+sum      1.866956e+06             NA       NA           4.668730e+03             4.671390e+03             4.746850e+03
+median   2.016000e+03             NA       NA           4.240000e+00             4.250000e+00             4.330000e+00
+mean     2.016151e+03             NA       NA           3.494558e+00             3.496549e+00             3.553031e+00
+SE.mean  2.856344e-02             NA       NA           4.834782e-02             4.891351e-02             4.965761e-02
+CI.mean  5.605667e-02             NA       NA           9.484598e-02             9.595571e-02             9.741544e-02
+var      7.554959e-01             NA       NA           3.122916e+00             3.196422e+00             3.294413e+00
+std.dev  8.691927e-01             NA       NA           1.767177e+00             1.787854e+00             1.815052e+00
+coef.var 4.311148e-04             NA       NA           5.056940e-01             5.113195e-01             5.108460e-01
+         bewertung_zuverlaessigkeit bewertung_angebotsbeschreibung bewertung_kauferlebnis anzahl_bewertungen
+nbr.val                1.336000e+03                   1.336000e+03           1.336000e+03       1336.0000000
+nbr.null               2.550000e+02                   2.530000e+02           2.960000e+02        249.0000000
+nbr.na                 6.810000e+02                   6.810000e+02           6.810000e+02        681.0000000
+min                    0.000000e+00                   0.000000e+00           0.000000e+00          0.0000000
+max                    5.000000e+00                   5.000000e+00           5.000000e+00         84.0000000
+range                  5.000000e+00                   5.000000e+00           5.000000e+00         84.0000000
+sum                    4.697370e+03                   4.667810e+03           4.306660e+03       6766.0000000
+median                 4.270000e+00                   4.250000e+00           4.000000e+00          3.0000000
+mean                   3.515996e+00                   3.493870e+00           3.223548e+00          5.0643713
+SE.mean                5.000745e-02                   4.918577e-02           5.201444e-02          0.2294290
+CI.mean                9.810174e-02                   9.648981e-02           1.020389e-01          0.4500807
+var                    3.340995e+00                   3.232104e+00           3.614551e+00         70.3239431
+std.dev                1.827839e+00                   1.797805e+00           1.901197e+00          8.3859372
+coef.var               5.198638e-01                   5.145599e-01           5.897840e-01          1.6558694
+         prozentsatz_weiterempfehlungen fahrzeughalter karosserieform getriebe antriebsart       gaenge      hubraum
+nbr.val                    1.336000e+03   1.530000e+03             NA       NA          NA 1.333000e+03 2.007000e+03
+nbr.null                   2.760000e+02   0.000000e+00             NA       NA          NA 0.000000e+00 0.000000e+00
+nbr.na                     6.810000e+02   4.870000e+02             NA       NA          NA 6.840000e+02 1.000000e+01
+min                        0.000000e+00   1.000000e+00             NA       NA          NA 1.000000e+00 1.395000e+03
+max                        1.000000e+02   4.000000e+00             NA       NA          NA 7.000000e+00 1.966800e+04
+range                      1.000000e+02   3.000000e+00             NA       NA          NA 6.000000e+00 1.827300e+04
+sum                        9.849100e+04   1.929000e+03             NA       NA          NA 7.311000e+03 3.530413e+06
+median                     1.000000e+02   1.000000e+00             NA       NA          NA 5.000000e+00 1.598000e+03
+mean                       7.372081e+01   1.260784e+00             NA       NA          NA 5.484621e+00 1.759050e+03
+SE.mean                    1.075755e+00   1.238699e-02             NA       NA          NA 1.722706e-02 9.750111e+00
+CI.mean                    2.110354e+00   2.429729e-02             NA       NA          NA 3.379513e-02 1.912140e+01
+var                        1.546085e+03   2.347594e-01             NA       NA          NA 3.955966e-01 1.907948e+05
+std.dev                    3.932028e+01   4.845197e-01             NA       NA          NA 6.289647e-01 4.368006e+02
+coef.var                   5.333675e-01   3.843002e-01             NA       NA          NA 1.146779e-01 2.483162e-01
+         kraftstoffverbrauch co2_emissionen co2_effizienzklasse schadstoffklasse       tueren  sitzplaetze garantie
+nbr.val         1.929000e+03   8.040000e+02                  NA               NA 8.410000e+02 1.845000e+03       NA
+nbr.null        0.000000e+00   0.000000e+00                  NA               NA 0.000000e+00 0.000000e+00       NA
+nbr.na          8.800000e+01   1.213000e+03                  NA               NA 1.176000e+03 1.720000e+02       NA
+min             1.000000e+00   8.500000e+01                  NA               NA 2.000000e+00 1.000000e+00       NA
+max             6.600000e+01   1.740000e+02                  NA               NA 5.000000e+00 5.000000e+00       NA
+range           6.500000e+01   8.900000e+01                  NA               NA 3.000000e+00 4.000000e+00       NA
+sum             8.690200e+04   9.931600e+04                  NA               NA 3.379000e+03 8.430000e+03       NA
+median          4.400000e+01   1.220000e+02                  NA               NA 4.000000e+00 5.000000e+00       NA
+mean            4.505029e+01   1.235274e+02                  NA               NA 4.017836e+00 4.569106e+00       NA
+SE.mean         1.530926e-01   6.582702e-01                  NA               NA 3.420935e-02 1.697585e-02       NA
+CI.mean         3.002445e-01   1.292134e+00                  NA               NA 6.714585e-02 3.329392e-02       NA
+var             4.521064e+01   3.483890e+02                  NA               NA 9.842053e-01 5.316914e-01       NA
+std.dev         6.723886e+00   1.866518e+01                  NA               NA 9.920712e-01 7.291718e-01       NA
+coef.var        1.492529e-01   1.511016e-01                  NA               NA 2.469168e-01 1.595874e-01       NA
+         aussenfarbe innenausstattung alarmanlage tagfahrlicht traktionskontrolle klimaanlage klimaautomatik panoramadach
+nbr.val           NA               NA          NA           NA                 NA          NA             NA           NA
+nbr.null          NA               NA          NA           NA                 NA          NA             NA           NA
+nbr.na            NA               NA          NA           NA                 NA          NA             NA           NA
+min               NA               NA          NA           NA                 NA          NA             NA           NA
+max               NA               NA          NA           NA                 NA          NA             NA           NA
+range             NA               NA          NA           NA                 NA          NA             NA           NA
+sum               NA               NA          NA           NA                 NA          NA             NA           NA
+median            NA               NA          NA           NA                 NA          NA             NA           NA
+mean              NA               NA          NA           NA                 NA          NA             NA           NA
+SE.mean           NA               NA          NA           NA                 NA          NA             NA           NA
+CI.mean           NA               NA          NA           NA                 NA          NA             NA           NA
+var               NA               NA          NA           NA                 NA          NA             NA           NA
+std.dev           NA               NA          NA           NA                 NA          NA             NA           NA
+coef.var          NA               NA          NA           NA                 NA          NA             NA           NA
+         schiebedach einparkhilfe_kamera einparkhilfe_selbstlenkendes_system einparkhilfe_sensoren_vorne
+nbr.val           NA                  NA                                  NA                          NA
+nbr.null          NA                  NA                                  NA                          NA
+nbr.na            NA                  NA                                  NA                          NA
+min               NA                  NA                                  NA                          NA
+max               NA                  NA                                  NA                          NA
+range             NA                  NA                                  NA                          NA
+sum               NA                  NA                                  NA                          NA
+median            NA                  NA                                  NA                          NA
+mean              NA                  NA                                  NA                          NA
+SE.mean           NA                  NA                                  NA                          NA
+CI.mean           NA                  NA                                  NA                          NA
+var               NA                  NA                                  NA                          NA
+std.dev           NA                  NA                                  NA                          NA
+coef.var          NA                  NA                                  NA                          NA
+         einparkhilfe_sensoren_hinten radio alufelgen sportfahrwerk sportpaket anhaengerkupplung scheckheftgepflegt
+nbr.val                            NA    NA        NA            NA         NA                NA                 NA
+nbr.null                           NA    NA        NA            NA         NA                NA                 NA
+nbr.na                             NA    NA        NA            NA         NA                NA                 NA
+min                                NA    NA        NA            NA         NA                NA                 NA
+max                                NA    NA        NA            NA         NA                NA                 NA
+range                              NA    NA        NA            NA         NA                NA                 NA
+sum                                NA    NA        NA            NA         NA                NA                 NA
+median                             NA    NA        NA            NA         NA                NA                 NA
+mean                               NA    NA        NA            NA         NA                NA                 NA
+SE.mean                            NA    NA        NA            NA         NA                NA                 NA
+CI.mean                            NA    NA        NA            NA         NA                NA                 NA
+var                                NA    NA        NA            NA         NA                NA                 NA
+std.dev                            NA    NA        NA            NA         NA                NA                 NA
+coef.var                           NA    NA        NA            NA         NA                NA                 NA
+         nichtraucherfahrzeug link          age
+nbr.val                    NA   NA 2.017000e+03
+nbr.null                   NA   NA 0.000000e+00
+nbr.na                     NA   NA 0.000000e+00
+min                        NA   NA 6.000000e+00
+max                        NA   NA 1.300000e+02
+range                      NA   NA 1.240000e+02
+sum                        NA   NA 8.904800e+04
+median                     NA   NA 3.100000e+01
+mean                       NA   NA 4.414874e+01
+SE.mean                    NA   NA 7.516546e-01
+CI.mean                    NA   NA 1.474101e+00
+var                        NA   NA 1.139574e+03
+std.dev                    NA   NA 3.375758e+01
+coef.var                   NA   NA 7.646330e-01

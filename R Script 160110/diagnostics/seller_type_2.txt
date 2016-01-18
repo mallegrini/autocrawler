@@ -1,0 +1,51 @@
+Linear Model: seller_type_2 
+
+Linear Regression
+
+Call:
+lm(formula = log(preis) ~ age + kilometer + leistung + as.factor(anbieter_typ), 
+    data = SumData)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-1.40892 -0.07896 -0.00350  0.07542  2.52736 
+
+Coefficients:
+                                           Estimate Std. Error  t value Pr(>|t|)    
+(Intercept)                               9.546e+00  2.087e-03 4575.048   <2e-16 ***
+age                                      -7.758e-03  2.604e-05 -297.947   <2e-16 ***
+kilometer                                -2.721e-02  1.637e-04 -166.173   <2e-16 ***
+leistung                                  5.559e-03  2.211e-05  251.448   <2e-16 ***
+as.factor(anbieter_typ)Privater Anbieter  3.847e-03  1.652e-03    2.329   0.0199 *  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.1195 on 56755 degrees of freedom
+Multiple R-squared:  0.9126,	Adjusted R-squared:  0.9126 
+F-statistic: 1.481e+05 on 4 and 56755 DF,  p-value: < 2.2e-16
+
+
+ANOVA of Linear Model
+Analysis of Variance Table
+
+Response: log(preis)
+                           Df Sum Sq Mean Sq    F value  Pr(>F)    
+age                         1 7196.4  7196.4 5.0425e+05 < 2e-16 ***
+kilometer                   1  338.1   338.1 2.3688e+04 < 2e-16 ***
+leistung                    1  919.1   919.1 6.4398e+04 < 2e-16 ***
+as.factor(anbieter_typ)     1    0.1     0.1 5.4225e+00 0.01988 *  
+Residuals               56755  810.0     0.0                       
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+
+Stepwise Regression
+Start:  AIC=-241195.7
+log(preis) ~ age + kilometer + leistung + as.factor(anbieter_typ)
+
+                          Df Sum of Sq     RSS     AIC
+<none>                                  809.99 -241196
+- as.factor(anbieter_typ)  1      0.08  810.06 -241192
+- kilometer                1    394.09 1204.07 -218695
+- leistung                 1    902.34 1712.32 -198708
+- age                      1   1266.93 2076.91 -187751

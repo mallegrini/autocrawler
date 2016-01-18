@@ -1,0 +1,51 @@
+Linear Model: without_rating 
+
+Linear Regression
+
+Call:
+lm(formula = log(preis) ~ age + kilometer + leistung + as.factor(garantie), 
+    data = DealerWRatingData)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-0.79734 -0.07650 -0.00382  0.07244  0.61383 
+
+Coefficients:
+                          Estimate Std. Error t value Pr(>|t|)    
+(Intercept)              9.536e+00  2.746e-03 3472.09   <2e-16 ***
+age                     -7.480e-03  3.156e-05 -236.99   <2e-16 ***
+kilometer               -2.785e-02  2.035e-04 -136.86   <2e-16 ***
+leistung                 5.491e-03  2.665e-05  206.02   <2e-16 ***
+as.factor(garantie)TRUE  1.528e-02  1.321e-03   11.56   <2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.1113 on 41360 degrees of freedom
+Multiple R-squared:  0.8971,	Adjusted R-squared:  0.8971 
+F-statistic: 9.012e+04 on 4 and 41360 DF,  p-value: < 2.2e-16
+
+
+ANOVA of Linear Model
+Analysis of Variance Table
+
+Response: log(preis)
+                       Df Sum Sq Mean Sq   F value    Pr(>F)    
+age                     1 3736.5  3736.5 301653.78 < 2.2e-16 ***
+kilometer               1  201.4   201.4  16258.82 < 2.2e-16 ***
+leistung                1  525.7   525.7  42444.01 < 2.2e-16 ***
+as.factor(garantie)     1    1.7     1.7    133.71 < 2.2e-16 ***
+Residuals           41360  512.3     0.0                        
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+
+Stepwise Regression
+Start:  AIC=-181634.1
+log(preis) ~ age + kilometer + leistung + as.factor(garantie)
+
+                      Df Sum of Sq     RSS     AIC
+<none>                              512.32 -181634
+- as.factor(garantie)  1      1.66  513.97 -181503
+- kilometer            1    232.03  744.34 -166184
+- leistung             1    525.73 1038.04 -152426
+- age                  1    695.67 1207.99 -146154

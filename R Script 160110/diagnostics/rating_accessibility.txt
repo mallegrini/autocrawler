@@ -1,0 +1,55 @@
+Linear Model: rating_accessibility 
+
+Linear Regression
+
+Call:
+lm(formula = log(preis) ~ age + kilometer + leistung + as.factor(garantie) + 
+    bewertung_erreichbarkeit, data = DealerWRatingData)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-0.78739 -0.07661 -0.00388  0.07200  0.61912 
+
+Coefficients:
+                           Estimate Std. Error t value Pr(>|t|)    
+(Intercept)               9.491e+00  4.901e-03 1936.40   <2e-16 ***
+age                      -7.483e-03  3.152e-05 -237.42   <2e-16 ***
+kilometer                -2.775e-02  2.034e-04 -136.45   <2e-16 ***
+leistung                  5.486e-03  2.662e-05  206.12   <2e-16 ***
+as.factor(garantie)TRUE   1.553e-02  1.320e-03   11.77   <2e-16 ***
+bewertung_erreichbarkeit  1.033e-02  9.365e-04   11.03   <2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.1111 on 41359 degrees of freedom
+Multiple R-squared:  0.8974,	Adjusted R-squared:  0.8974 
+F-statistic: 7.233e+04 on 5 and 41359 DF,  p-value: < 2.2e-16
+
+
+ANOVA of Linear Model
+Analysis of Variance Table
+
+Response: log(preis)
+                            Df Sum Sq Mean Sq   F value    Pr(>F)    
+age                          1 3736.5  3736.5 302533.17 < 2.2e-16 ***
+kilometer                    1  201.4   201.4  16306.21 < 2.2e-16 ***
+leistung                     1  525.7   525.7  42567.75 < 2.2e-16 ***
+as.factor(garantie)          1    1.7     1.7    134.10 < 2.2e-16 ***
+bewertung_erreichbarkeit     1    1.5     1.5    121.57 < 2.2e-16 ***
+Residuals                41359  510.8     0.0                        
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+
+Stepwise Regression
+Start:  AIC=-181753.5
+log(preis) ~ age + kilometer + leistung + as.factor(garantie) + 
+    bewertung_erreichbarkeit
+
+                           Df Sum of Sq     RSS     AIC
+<none>                                   510.81 -181753
+- bewertung_erreichbarkeit  1      1.50  512.32 -181634
+- as.factor(garantie)       1      1.71  512.52 -181617
+- kilometer                 1    229.96  740.77 -166380
+- leistung                  1    524.74 1035.55 -152523
+- age                       1    696.21 1207.02 -146186

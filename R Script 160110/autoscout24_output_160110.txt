@@ -1,0 +1,612 @@
+
+Call:
+lm(formula = preis ~ kilometer, data = SumData)
+
+Residuals:
+   Min     1Q Median     3Q    Max 
+-13378  -2382   -173   2172  79535 
+
+Coefficients:
+             Estimate Std. Error t value Pr(>|t|)    
+(Intercept) 20370.526     20.205    1008   <2e-16 ***
+kilometer    -852.233      2.979    -286   <2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 3555 on 56758 degrees of freedom
+Multiple R-squared:  0.5904,	Adjusted R-squared:  0.5904 
+F-statistic: 8.182e+04 on 1 and 56758 DF,  p-value: < 2.2e-16
+
+
+Call:
+lm(formula = preis ~ leistung, data = SumData)
+
+Residuals:
+   Min     1Q Median     3Q    Max 
+-17286  -4222   1365   3939  21819 
+
+Coefficients:
+             Estimate Std. Error t value Pr(>|t|)    
+(Intercept) 9851.6354    88.9424  110.76   <2e-16 ***
+leistung      74.4494     0.9684   76.88   <2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 5286 on 56758 degrees of freedom
+Multiple R-squared:  0.09432,	Adjusted R-squared:  0.0943 
+F-statistic:  5911 on 1 and 56758 DF,  p-value: < 2.2e-16
+
+
+Call:
+lm(formula = preis ~ as.factor(fahrzeugart) - 1, data = SumData)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-13995.4  -4093.4    706.6   3906.6  25672.6 
+
+Coefficients:
+                                     Estimate Std. Error t value Pr(>|t|)    
+as.factor(fahrzeugart)Gebraucht      15993.41      23.68   675.3   <2e-16 ***
+as.factor(fahrzeugart)Jahreswagen    20770.53      84.43   246.0   <2e-16 ***
+as.factor(fahrzeugart)Tageszulassung 21250.81     137.42   154.6   <2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 5359 on 56757 degrees of freedom
+Multiple R-squared:  0.905,	Adjusted R-squared:  0.905 
+F-statistic: 1.802e+05 on 3 and 56757 DF,  p-value: < 2.2e-16
+
+
+Call:
+lm(formula = preis ~ as.factor(garantie) - 1, data = SumData)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-14437.4  -3604.0    102.6   3387.0  30877.0 
+
+Coefficients:
+                         Estimate Std. Error t value Pr(>|t|)    
+as.factor(garantie)FALSE 13602.98      33.42   407.1   <2e-16 ***
+as.factor(garantie)TRUE  18387.41      27.29   673.8   <2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 5036 on 56758 degrees of freedom
+Multiple R-squared:  0.9161,	Adjusted R-squared:  0.9161 
+F-statistic: 3.099e+05 on 2 and 56758 DF,  p-value: < 2.2e-16
+
+
+Call:
+lm(formula = preis ~ bewertung_durchschnitt, data = DealerWRatingData)
+
+Residuals:
+   Min     1Q Median     3Q    Max 
+-14989  -3465    797   3415  26767 
+
+Coefficients:
+                       Estimate Std. Error t value Pr(>|t|)    
+(Intercept)            14423.14     189.98   75.92   <2e-16 ***
+bewertung_durchschnitt   712.95      44.33   16.08   <2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 5067 on 41363 degrees of freedom
+Multiple R-squared:  0.006215,	Adjusted R-squared:  0.006191 
+F-statistic: 258.7 on 1 and 41363 DF,  p-value: < 2.2e-16
+
+
+Call:
+lm(formula = preis ~ bewertung_gesamteindruck, data = DealerWRatingData)
+
+Residuals:
+   Min     1Q Median     3Q    Max 
+-14968  -3455    790   3408  26734 
+
+Coefficients:
+                         Estimate Std. Error t value Pr(>|t|)    
+(Intercept)              14571.39     174.07   83.71   <2e-16 ***
+bewertung_gesamteindruck   679.22      40.62   16.72   <2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 5066 on 41363 degrees of freedom
+Multiple R-squared:  0.006715,	Adjusted R-squared:  0.006691 
+F-statistic: 279.6 on 1 and 41363 DF,  p-value: < 2.2e-16
+
+
+Call:
+lm(formula = preis ~ bewertung_erreichbarkeit, data = DealerWRatingData)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-14901.5  -3484.5    801.9   3421.6  26868.6 
+
+Coefficients:
+                         Estimate Std. Error t value Pr(>|t|)    
+(Intercept)              15476.66     186.72   82.89   <2e-16 ***
+bewertung_erreichbarkeit   455.95      42.71   10.68   <2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 5076 on 41363 degrees of freedom
+Multiple R-squared:  0.002748,	Adjusted R-squared:  0.002724 
+F-statistic:   114 on 1 and 41363 DF,  p-value: < 2.2e-16
+
+
+Call:
+lm(formula = preis ~ bewertung_zuverlaessigkeit, data = DealerWRatingData)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-14930.7  -3459.5    796.4   3415.4  26823.6 
+
+Coefficients:
+                           Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                15410.46     148.78  103.58   <2e-16 ***
+bewertung_zuverlaessigkeit   479.81      34.47   13.92   <2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 5071 on 41363 degrees of freedom
+Multiple R-squared:  0.004663,	Adjusted R-squared:  0.004639 
+F-statistic: 193.8 on 1 and 41363 DF,  p-value: < 2.2e-16
+
+
+Call:
+lm(formula = preis ~ bewertung_angebotsbeschreibung, data = DealerWRatingData)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-15053.4  -3415.1    776.2   3407.9  26689.3 
+
+Coefficients:
+                               Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                    14056.30     170.77   82.31   <2e-16 ***
+bewertung_angebotsbeschreibung   799.23      39.76   20.10   <2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 5058 on 41363 degrees of freedom
+Multiple R-squared:  0.009673,	Adjusted R-squared:  0.00965 
+F-statistic:   404 on 1 and 41363 DF,  p-value: < 2.2e-16
+
+
+Call:
+lm(formula = preis ~ bewertung_kauferlebnis, data = DealerWRatingData)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-15058.7  -3467.7    785.8   3408.5  26908.5 
+
+Coefficients:
+                       Estimate Std. Error t value Pr(>|t|)    
+(Intercept)            16244.21      94.68  171.58   <2e-16 ***
+bewertung_kauferlebnis   304.23      23.00   13.23   <2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 5072 on 41363 degrees of freedom
+Multiple R-squared:  0.004212,	Adjusted R-squared:  0.004188 
+F-statistic: 174.9 on 1 and 41363 DF,  p-value: < 2.2e-16
+
+
+Call:
+lm(formula = preis ~ anzahl_bewertungen, data = DealerWRatingData)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-15630.5  -3438.3    716.9   3490.9  27110.9 
+
+Coefficients:
+                    Estimate Std. Error t value Pr(>|t|)    
+(Intercept)        17325.418     29.339 590.523   <2e-16 ***
+anzahl_bewertungen    11.233      1.364   8.234   <2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 5079 on 41363 degrees of freedom
+Multiple R-squared:  0.001636,	Adjusted R-squared:  0.001612 
+F-statistic:  67.8 on 1 and 41363 DF,  p-value: < 2.2e-16
+
+
+Call:
+lm(formula = preis ~ prozentsatz_weiterempfehlungen, data = DealerWRatingData)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-15240.8  -3476.5    807.3   3350.2  26830.2 
+
+Coefficients:
+                                Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                    15687.827    137.653  113.97   <2e-16 ***
+prozentsatz_weiterempfehlungen    19.520      1.498   13.03   <2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 5072 on 41363 degrees of freedom
+Multiple R-squared:  0.00409,	Adjusted R-squared:  0.004066 
+F-statistic: 169.9 on 1 and 41363 DF,  p-value: < 2.2e-16
+
+
+Call:
+lm(formula = preis ~ as.factor(erstzulassung_jahr) - 1 + kilometer + 
+    leistung + garantie, data = SumData)
+
+Residuals:
+   Min     1Q Median     3Q    Max 
+-10028  -1403   -147   1174  30345 
+
+Coefficients:
+                                    Estimate Std. Error  t value Pr(>|t|)    
+as.factor(erstzulassung_jahr)2005  3122.3775    73.1773   42.669  < 2e-16 ***
+as.factor(erstzulassung_jahr)2006  3349.3494    71.0556   47.137  < 2e-16 ***
+as.factor(erstzulassung_jahr)2007  3715.6867    70.3335   52.830  < 2e-16 ***
+as.factor(erstzulassung_jahr)2008  4371.5626    65.4441   66.798  < 2e-16 ***
+as.factor(erstzulassung_jahr)2009  5434.3427    56.5410   96.113  < 2e-16 ***
+as.factor(erstzulassung_jahr)2010  6441.1130    56.4742  114.054  < 2e-16 ***
+as.factor(erstzulassung_jahr)2011  7605.4591    50.8401  149.596  < 2e-16 ***
+as.factor(erstzulassung_jahr)2012  8723.0465    51.3095  170.008  < 2e-16 ***
+as.factor(erstzulassung_jahr)2013 10674.1489    51.6757  206.560  < 2e-16 ***
+as.factor(erstzulassung_jahr)2014 12697.3834    39.9787  317.604  < 2e-16 ***
+as.factor(erstzulassung_jahr)2015 13795.3335    43.1857  319.442  < 2e-16 ***
+kilometer                          -313.2061     2.8950 -108.189  < 2e-16 ***
+leistung                             85.6838     0.3763  227.675  < 2e-16 ***
+garantieTRUE                         97.2106    20.3223    4.783 1.73e-06 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 2045 on 56746 degrees of freedom
+Multiple R-squared:  0.9862,	Adjusted R-squared:  0.9862 
+F-statistic: 2.891e+05 on 14 and 56746 DF,  p-value: < 2.2e-16
+
+
+Call:
+lm(formula = preis ~ as.factor(erstzulassung_jahr) - 1 + kilometer + 
+    bewertung_durchschnitt + leistung + garantie, data = DealerWRatingData)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-9578.5 -1419.2  -157.5  1181.0 16034.3 
+
+Coefficients:
+                                    Estimate Std. Error t value Pr(>|t|)    
+as.factor(erstzulassung_jahr)2005  2138.5028   132.2887  16.165  < 2e-16 ***
+as.factor(erstzulassung_jahr)2006  2349.6449   127.8185  18.383  < 2e-16 ***
+as.factor(erstzulassung_jahr)2007  2662.4630   126.4919  21.048  < 2e-16 ***
+as.factor(erstzulassung_jahr)2008  3148.9886   119.5235  26.346  < 2e-16 ***
+as.factor(erstzulassung_jahr)2009  4079.6532   110.0414  37.074  < 2e-16 ***
+as.factor(erstzulassung_jahr)2010  5174.7719   107.7840  48.011  < 2e-16 ***
+as.factor(erstzulassung_jahr)2011  6285.4505   100.8941  62.297  < 2e-16 ***
+as.factor(erstzulassung_jahr)2012  7356.8538   100.8362  72.958  < 2e-16 ***
+as.factor(erstzulassung_jahr)2013  9038.1221   100.2056  90.196  < 2e-16 ***
+as.factor(erstzulassung_jahr)2014 11140.6206    90.7707 122.734  < 2e-16 ***
+as.factor(erstzulassung_jahr)2015 12189.8641    92.4158 131.902  < 2e-16 ***
+kilometer                          -352.3204     3.9608 -88.952  < 2e-16 ***
+bewertung_durchschnitt              212.7157    17.9406  11.857  < 2e-16 ***
+leistung                             93.5057     0.4898 190.909  < 2e-16 ***
+garantieTRUE                        114.1771    24.3316   4.693 2.71e-06 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 2041 on 41350 degrees of freedom
+Multiple R-squared:  0.9874,	Adjusted R-squared:  0.9874 
+F-statistic: 2.16e+05 on 15 and 41350 DF,  p-value: < 2.2e-16
+
+
+Call:
+lm(formula = preis ~ as.factor(erstzulassung_jahr) - 1 + kilometer + 
+    anzahl_bewertungen + bewertung_durchschnitt + leistung, data = DealerWRatingData)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-9286.3 -1420.1  -155.4  1181.1 16058.1 
+
+Coefficients:
+                                    Estimate Std. Error t value Pr(>|t|)    
+as.factor(erstzulassung_jahr)2005  2165.6029   131.9590  16.411  < 2e-16 ***
+as.factor(erstzulassung_jahr)2006  2386.5343   127.4016  18.732  < 2e-16 ***
+as.factor(erstzulassung_jahr)2007  2705.6208   125.9809  21.476  < 2e-16 ***
+as.factor(erstzulassung_jahr)2008  3195.4386   118.9386  26.866  < 2e-16 ***
+as.factor(erstzulassung_jahr)2009  4135.1033   109.2173  37.861  < 2e-16 ***
+as.factor(erstzulassung_jahr)2010  5237.8027   106.8605  49.015  < 2e-16 ***
+as.factor(erstzulassung_jahr)2011  6366.7956    99.5867  63.932  < 2e-16 ***
+as.factor(erstzulassung_jahr)2012  7443.9337    99.4816  74.827  < 2e-16 ***
+as.factor(erstzulassung_jahr)2013  9120.8910    98.9962  92.134  < 2e-16 ***
+as.factor(erstzulassung_jahr)2014 11251.2512    88.6032 126.985  < 2e-16 ***
+as.factor(erstzulassung_jahr)2015 12298.1033    90.5521 135.812  < 2e-16 ***
+kilometer                          -352.6917     3.9469 -89.359  < 2e-16 ***
+anzahl_bewertungen                   -3.1375     0.5519  -5.685 1.31e-08 ***
+bewertung_durchschnitt              215.8655    17.9385  12.034  < 2e-16 ***
+leistung                             93.6162     0.4901 191.020  < 2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 2041 on 41350 degrees of freedom
+Multiple R-squared:  0.9874,	Adjusted R-squared:  0.9874 
+F-statistic: 2.161e+05 on 15 and 41350 DF,  p-value: < 2.2e-16
+
+
+Call:
+lm(formula = preis ~ as.factor(erstzulassung_jahr) - 1 + kilometer + 
+    anzahl_bewertungen + bewertung_gesamteindruck + leistung + 
+    garantie, data = DealerWRatingData)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-9247.4 -1417.1  -155.6  1178.8 16066.9 
+
+Coefficients:
+                                    Estimate Std. Error t value Pr(>|t|)    
+as.factor(erstzulassung_jahr)2005  2207.0379   128.5724  17.166  < 2e-16 ***
+as.factor(erstzulassung_jahr)2006  2422.2988   123.9949  19.535  < 2e-16 ***
+as.factor(erstzulassung_jahr)2007  2734.1914   122.7631  22.272  < 2e-16 ***
+as.factor(erstzulassung_jahr)2008  3227.1637   115.2849  27.993  < 2e-16 ***
+as.factor(erstzulassung_jahr)2009  4155.7043   105.6740  39.326  < 2e-16 ***
+as.factor(erstzulassung_jahr)2010  5258.7196   103.1430  50.985  < 2e-16 ***
+as.factor(erstzulassung_jahr)2011  6377.1714    96.0218  66.414  < 2e-16 ***
+as.factor(erstzulassung_jahr)2012  7451.6438    96.0548  77.577  < 2e-16 ***
+as.factor(erstzulassung_jahr)2013  9133.6087    95.3776  95.763  < 2e-16 ***
+as.factor(erstzulassung_jahr)2014 11246.1274    85.4589 131.597  < 2e-16 ***
+as.factor(erstzulassung_jahr)2015 12297.6501    87.2426 140.959  < 2e-16 ***
+kilometer                          -350.7435     3.9696 -88.358  < 2e-16 ***
+anzahl_bewertungen                   -2.9783     0.5536  -5.380 7.51e-08 ***
+bewertung_gesamteindruck            196.2715    16.4545  11.928  < 2e-16 ***
+leistung                             93.6101     0.4900 191.045  < 2e-16 ***
+garantieTRUE                        100.9191    24.4092   4.134 3.56e-05 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 2040 on 41349 degrees of freedom
+Multiple R-squared:  0.9874,	Adjusted R-squared:  0.9874 
+F-statistic: 2.027e+05 on 16 and 41349 DF,  p-value: < 2.2e-16
+
+
+Call:
+lm(formula = preis ~ as.factor(erstzulassung_jahr) - 1 + kilometer + 
+    anzahl_bewertungen + bewertung_erreichbarkeit + leistung + 
+    garantie, data = DealerWRatingData)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-9262.8 -1420.1  -158.2  1181.2 15991.6 
+
+Coefficients:
+                                    Estimate Std. Error t value Pr(>|t|)    
+as.factor(erstzulassung_jahr)2005  2386.0517   131.4150  18.157  < 2e-16 ***
+as.factor(erstzulassung_jahr)2006  2612.6050   126.5748  20.641  < 2e-16 ***
+as.factor(erstzulassung_jahr)2007  2928.1474   125.1720  23.393  < 2e-16 ***
+as.factor(erstzulassung_jahr)2008  3412.2794   118.4913  28.798  < 2e-16 ***
+as.factor(erstzulassung_jahr)2009  4345.4280   108.8014  39.939  < 2e-16 ***
+as.factor(erstzulassung_jahr)2010  5447.5106   106.3449  51.225  < 2e-16 ***
+as.factor(erstzulassung_jahr)2011  6562.4908    99.6737  65.840  < 2e-16 ***
+as.factor(erstzulassung_jahr)2012  7636.0897    99.7380  76.561  < 2e-16 ***
+as.factor(erstzulassung_jahr)2013  9313.1304    99.2507  93.834  < 2e-16 ***
+as.factor(erstzulassung_jahr)2014 11419.4000    90.0714 126.782  < 2e-16 ***
+as.factor(erstzulassung_jahr)2015 12471.3608    91.6686 136.048  < 2e-16 ***
+kilometer                          -352.8399     3.9647 -88.996  < 2e-16 ***
+anzahl_bewertungen                   -2.9532     0.5541  -5.329 9.90e-08 ***
+bewertung_erreichbarkeit            150.0199    17.2211   8.711  < 2e-16 ***
+leistung                             93.6568     0.4903 191.001  < 2e-16 ***
+garantieTRUE                        112.0826    24.4220   4.589 4.46e-06 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 2042 on 41349 degrees of freedom
+Multiple R-squared:  0.9874,	Adjusted R-squared:  0.9874 
+F-statistic: 2.023e+05 on 16 and 41349 DF,  p-value: < 2.2e-16
+
+
+Call:
+lm(formula = preis ~ as.factor(erstzulassung_jahr) - 1 + kilometer + 
+    anzahl_bewertungen + bewertung_zuverlaessigkeit + leistung + 
+    garantie, data = DealerWRatingData)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-9250.3 -1417.2  -158.1  1183.0 15964.7 
+
+Coefficients:
+                                    Estimate Std. Error t value Pr(>|t|)    
+as.factor(erstzulassung_jahr)2005  2450.0655   123.4008  19.855  < 2e-16 ***
+as.factor(erstzulassung_jahr)2006  2678.0851   117.9912  22.697  < 2e-16 ***
+as.factor(erstzulassung_jahr)2007  2989.8769   116.7020  25.620  < 2e-16 ***
+as.factor(erstzulassung_jahr)2008  3480.8618   108.9103  31.961  < 2e-16 ***
+as.factor(erstzulassung_jahr)2009  4410.2674    98.6166  44.721  < 2e-16 ***
+as.factor(erstzulassung_jahr)2010  5508.0022    96.2278  57.239  < 2e-16 ***
+as.factor(erstzulassung_jahr)2011  6626.2870    88.5507  74.830  < 2e-16 ***
+as.factor(erstzulassung_jahr)2012  7701.5639    88.5288  86.995  < 2e-16 ***
+as.factor(erstzulassung_jahr)2013  9378.9107    88.0939 106.465  < 2e-16 ***
+as.factor(erstzulassung_jahr)2014 11489.5952    77.3578 148.525  < 2e-16 ***
+as.factor(erstzulassung_jahr)2015 12541.1362    79.3211 158.106  < 2e-16 ***
+kilometer                          -352.0445     3.9669 -88.745  < 2e-16 ***
+anzahl_bewertungen                   -3.0435     0.5542  -5.492 4.01e-08 ***
+bewertung_zuverlaessigkeit          137.7368    13.9369   9.883  < 2e-16 ***
+leistung                             93.6550     0.4902 191.050  < 2e-16 ***
+garantieTRUE                        103.8694    24.4184   4.254 2.11e-05 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 2041 on 41349 degrees of freedom
+Multiple R-squared:  0.9874,	Adjusted R-squared:  0.9874 
+F-statistic: 2.024e+05 on 16 and 41349 DF,  p-value: < 2.2e-16
+
+
+Call:
+lm(formula = preis ~ as.factor(erstzulassung_jahr) - 1 + kilometer + 
+    anzahl_bewertungen + bewertung_angebotsbeschreibung + leistung + 
+    garantie, data = DealerWRatingData)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-9263.4 -1420.0  -154.6  1177.6 15923.3 
+
+Coefficients:
+                                    Estimate Std. Error t value Pr(>|t|)    
+as.factor(erstzulassung_jahr)2005  2488.3454   127.5525  19.508  < 2e-16 ***
+as.factor(erstzulassung_jahr)2006  2710.6292   122.8372  22.067  < 2e-16 ***
+as.factor(erstzulassung_jahr)2007  3021.5412   121.7155  24.825  < 2e-16 ***
+as.factor(erstzulassung_jahr)2008  3514.4119   114.1693  30.782  < 2e-16 ***
+as.factor(erstzulassung_jahr)2009  4442.1341   104.5257  42.498  < 2e-16 ***
+as.factor(erstzulassung_jahr)2010  5543.5324   102.0254  54.335  < 2e-16 ***
+as.factor(erstzulassung_jahr)2011  6660.3571    94.8828  70.196  < 2e-16 ***
+as.factor(erstzulassung_jahr)2012  7735.3377    94.8277  81.573  < 2e-16 ***
+as.factor(erstzulassung_jahr)2013  9412.2659    94.3336  99.776  < 2e-16 ***
+as.factor(erstzulassung_jahr)2014 11518.2323    84.6558 136.060  < 2e-16 ***
+as.factor(erstzulassung_jahr)2015 12567.5806    86.6117 145.103  < 2e-16 ***
+kilometer                          -352.1673     3.9715 -88.675  < 2e-16 ***
+anzahl_bewertungen                   -2.8972     0.5541  -5.229 1.71e-07 ***
+bewertung_angebotsbeschreibung      131.0878    16.1670   8.108 5.27e-16 ***
+leistung                             93.6351     0.4905 190.912  < 2e-16 ***
+garantieTRUE                        103.3932    24.4320   4.232 2.32e-05 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 2042 on 41349 degrees of freedom
+Multiple R-squared:  0.9874,	Adjusted R-squared:  0.9874 
+F-statistic: 2.023e+05 on 16 and 41349 DF,  p-value: < 2.2e-16
+
+
+Call:
+lm(formula = preis ~ as.factor(erstzulassung_jahr) - 1 + kilometer + 
+    anzahl_bewertungen + bewertung_kauferlebnis + leistung + 
+    garantie, data = DealerWRatingData)
+
+Residuals:
+   Min     1Q Median     3Q    Max 
+ -9247  -1422   -157   1178  15970 
+
+Coefficients:
+                                    Estimate Std. Error t value Pr(>|t|)    
+as.factor(erstzulassung_jahr)2005  2711.5364   114.1464  23.755  < 2e-16 ***
+as.factor(erstzulassung_jahr)2006  2938.1327   108.2093  27.152  < 2e-16 ***
+as.factor(erstzulassung_jahr)2007  3247.3335   106.8503  30.391  < 2e-16 ***
+as.factor(erstzulassung_jahr)2008  3745.7870    97.9183  38.254  < 2e-16 ***
+as.factor(erstzulassung_jahr)2009  4677.1163    86.2276  54.242  < 2e-16 ***
+as.factor(erstzulassung_jahr)2010  5772.1328    83.5573  69.080  < 2e-16 ***
+as.factor(erstzulassung_jahr)2011  6890.2910    74.6549  92.295  < 2e-16 ***
+as.factor(erstzulassung_jahr)2012  7965.4925    74.6974 106.637  < 2e-16 ***
+as.factor(erstzulassung_jahr)2013  9640.2511    74.4539 129.479  < 2e-16 ***
+as.factor(erstzulassung_jahr)2014 11748.7377    61.7384 190.299  < 2e-16 ***
+as.factor(erstzulassung_jahr)2015 12798.0829    64.3779 198.796  < 2e-16 ***
+kilometer                          -352.8994     3.9638 -89.031  < 2e-16 ***
+anzahl_bewertungen                   -3.1276     0.5549  -5.636 1.75e-08 ***
+bewertung_kauferlebnis               83.6878     9.2991   9.000  < 2e-16 ***
+leistung                             93.6353     0.4904 190.955  < 2e-16 ***
+garantieTRUE                        103.0975    24.4266   4.221 2.44e-05 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 2042 on 41349 degrees of freedom
+Multiple R-squared:  0.9874,	Adjusted R-squared:  0.9874 
+F-statistic: 2.023e+05 on 16 and 41349 DF,  p-value: < 2.2e-16
+
+
+Call:
+lm(formula = preis ~ as.factor(erstzulassung_jahr) + as.factor(anbieter_typ) - 
+    1 + kilometer + leistung + garantie, data = SumData)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-10073.1  -1405.0   -143.8   1170.4  30250.0 
+
+Coefficients:
+                                           Estimate Std. Error  t value Pr(>|t|)    
+as.factor(erstzulassung_jahr)2005         3066.6183    74.0786   41.397  < 2e-16 ***
+as.factor(erstzulassung_jahr)2006         3296.8393    71.8783   45.867  < 2e-16 ***
+as.factor(erstzulassung_jahr)2007         3666.3383    71.0667   51.590  < 2e-16 ***
+as.factor(erstzulassung_jahr)2008         4325.9749    66.1164   65.430  < 2e-16 ***
+as.factor(erstzulassung_jahr)2009         5388.1704    57.3418   93.966  < 2e-16 ***
+as.factor(erstzulassung_jahr)2010         6404.9954    56.9619  112.444  < 2e-16 ***
+as.factor(erstzulassung_jahr)2011         7582.2203    51.0600  148.496  < 2e-16 ***
+as.factor(erstzulassung_jahr)2012         8706.0146    51.4220  169.305  < 2e-16 ***
+as.factor(erstzulassung_jahr)2013        10651.9531    51.8719  205.351  < 2e-16 ***
+as.factor(erstzulassung_jahr)2014        12684.7091    40.0580  316.659  < 2e-16 ***
+as.factor(erstzulassung_jahr)2015        13786.8626    43.2133  319.042  < 2e-16 ***
+as.factor(anbieter_typ)Privater Anbieter   144.7893    30.1496    4.802 1.57e-06 ***
+kilometer                                 -313.0884     2.8945 -108.166  < 2e-16 ***
+leistung                                    85.4613     0.3791  225.427  < 2e-16 ***
+garantieTRUE                               132.1363    21.5807    6.123 9.25e-10 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 2044 on 56745 degrees of freedom
+Multiple R-squared:  0.9862,	Adjusted R-squared:  0.9862 
+F-statistic: 2.699e+05 on 15 and 56745 DF,  p-value: < 2.2e-16
+
+
+Call:
+lm(formula = log(DealerWRatingData$preis) ~ as.factor(DealerWRatingData$erstzulassung_jahr) - 
+    1 + DealerWRatingData$kilometer + log(DealerWRatingData$bewertung_durchschnitt), 
+    data = ElasticityData)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-0.94695 -0.10408 -0.01044  0.09371  1.17622 
+
+Coefficients:
+                                                     Estimate Std. Error t value Pr(>|t|)    
+as.factor(DealerWRatingData$erstzulassung_jahr)2005  8.964082   0.010481  855.25   <2e-16 ***
+as.factor(DealerWRatingData$erstzulassung_jahr)2006  9.077912   0.010100  898.80   <2e-16 ***
+as.factor(DealerWRatingData$erstzulassung_jahr)2007  9.170355   0.009966  920.17   <2e-16 ***
+as.factor(DealerWRatingData$erstzulassung_jahr)2008  9.257617   0.009416  983.20   <2e-16 ***
+as.factor(DealerWRatingData$erstzulassung_jahr)2009  9.365826   0.008683 1078.63   <2e-16 ***
+as.factor(DealerWRatingData$erstzulassung_jahr)2010  9.470908   0.008502 1113.91   <2e-16 ***
+as.factor(DealerWRatingData$erstzulassung_jahr)2011  9.561386   0.007966 1200.21   <2e-16 ***
+as.factor(DealerWRatingData$erstzulassung_jahr)2012  9.652273   0.007933 1216.75   <2e-16 ***
+as.factor(DealerWRatingData$erstzulassung_jahr)2013  9.738219   0.007918 1229.84   <2e-16 ***
+as.factor(DealerWRatingData$erstzulassung_jahr)2014  9.836214   0.007123 1380.88   <2e-16 ***
+as.factor(DealerWRatingData$erstzulassung_jahr)2015  9.896029   0.007224 1369.88   <2e-16 ***
+DealerWRatingData$kilometer                         -0.027306   0.000305  -89.54   <2e-16 ***
+log(DealerWRatingData$bewertung_durchschnitt)        0.058716   0.004844   12.12   <2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.1584 on 41352 degrees of freedom
+Multiple R-squared:  0.9997,	Adjusted R-squared:  0.9997 
+F-statistic: 1.199e+07 on 13 and 41352 DF,  p-value: < 2.2e-16
+
+                    preis   kilometer    leistung erstzulassung_jahr      mfk_jahr fahrzeughalter bewertung_durchschnitt
+nbr.val          56760.00  56760.0000   56760.000         56760.0000    22992.0000     48299.0000             46590.0000
+nbr.null             0.00      0.0000       0.000             0.0000        0.0000         0.0000              5225.0000
+nbr.na               0.00      0.0000       0.000             0.0000    33768.0000      8461.0000             10170.0000
+min               1998.00      0.0001      49.000          2005.0000     2002.0000         1.0000                 0.0000
+max              44480.00    109.0150     248.000          2015.0000     2019.0000         6.0000                 5.0000
+range            42482.00    109.0149     199.000            10.0000       17.0000         5.0000                 5.0000
+sum          935029564.00 259555.1532 5048403.000     114220602.0000 46367903.0000     57129.0000            175745.8700
+median           17480.00      2.4860      81.000          2014.0000     2017.0000         1.0000                 4.2600
+mean             16473.39      4.5729      88.943          2012.3432     2016.6972         1.1828                 3.7722
+SE.mean             23.31      0.0210       0.096             0.0114        0.0054         0.0020                 0.0067
+CI.mean.0.95        45.70      0.0412       0.188             0.0223        0.0105         0.0038                 0.0131
+var           30851496.71     25.0798     524.972             7.3709        0.6653         0.1850                 2.0779
+std.dev           5554.41      5.0080      22.912             2.7149        0.8156         0.4301                 1.4415
+coef.var             0.34      1.0952       0.258             0.0013        0.0004         0.3636                 0.3821
+             bewertung_erreichbarkeit bewertung_zuverlaessigkeit bewertung_angebotsbeschreibung bewertung_kauferlebnis
+nbr.val                    46590.0000                  46590.000                     46590.0000             46590.0000
+nbr.null                    5340.0000                   5456.000                      5386.0000              6586.0000
+nbr.na                     10170.0000                  10170.000                     10170.0000             10170.0000
+min                            0.0000                      0.000                         0.0000                 0.0000
+max                            5.0000                      5.000                         5.0000                 5.0000
+range                          5.0000                      5.000                         5.0000                 5.0000
+sum                       179229.2600                 176024.550                    175761.3500            164251.1700
+median                         4.3400                      4.330                         4.2500                 4.0000
+mean                           3.8469                      3.778                         3.7725                 3.5255
+SE.mean                        0.0068                      0.007                         0.0068                 0.0075
+CI.mean.0.95                   0.0134                      0.014                         0.0133                 0.0147
+var                            2.1726                      2.268                         2.1451                 2.6137
+std.dev                        1.4740                      1.506                         1.4646                 1.6167
+coef.var                       0.3832                      0.399                         0.3882                 0.4586
+             anzahl_bewertungen prozentsatz_weiterempfehlungen
+nbr.val               46590.000                       46590.00
+nbr.null               5225.000                        5850.00
+nbr.na                10170.000                       10170.00
+min                       0.000                           0.00
+max                     403.000                         100.00
+range                   403.000                         100.00
+sum                  467023.000                     3739057.00
+median                    5.000                          97.00
+mean                     10.024                          80.25
+SE.mean                   0.082                           0.15
+CI.mean.0.95              0.160                           0.30
+var                     310.179                        1059.81
+std.dev                  17.612                          32.55
+coef.var                  1.757                           0.41

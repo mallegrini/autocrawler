@@ -1,0 +1,47 @@
+Linear Model: tdi_may_regression 
+
+Linear Regression
+
+Call:
+lm(formula = log(preis) ~ age + kilometer + leistung, data = tdi_may)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-0.71442 -0.08476 -0.00321  0.07718  1.71152 
+
+Coefficients:
+              Estimate Std. Error t value Pr(>|t|)    
+(Intercept)  9.712e+00  1.795e-02  541.09   <2e-16 ***
+age         -7.123e-03  1.664e-04  -42.81   <2e-16 ***
+kilometer   -3.487e-06  8.389e-08  -41.57   <2e-16 ***
+leistung     5.519e-03  2.001e-04   27.59   <2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.131 on 2013 degrees of freedom
+Multiple R-squared:  0.9256,	Adjusted R-squared:  0.9255 
+F-statistic:  8346 on 3 and 2013 DF,  p-value: < 2.2e-16
+
+
+ANOVA of Linear Model
+Analysis of Variance Table
+
+Response: log(preis)
+            Df Sum Sq Mean Sq  F value    Pr(>F)    
+age          1 386.21  386.21 22491.61 < 2.2e-16 ***
+kilometer    1  30.65   30.65  1784.71 < 2.2e-16 ***
+leistung     1  13.07   13.07   760.98 < 2.2e-16 ***
+Residuals 2013  34.57    0.02                       
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+
+Stepwise Regression
+Start:  AIC=-8194.12
+log(preis) ~ age + kilometer + leistung
+
+            Df Sum of Sq    RSS     AIC
+<none>                   34.566 -8194.1
+- leistung   1    13.067 47.633 -7549.3
+- kilometer  1    29.675 64.241 -6946.0
+- age        1    31.465 66.032 -6890.6

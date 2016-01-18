@@ -1,0 +1,55 @@
+Linear Model: without_rating 
+
+Linear Regression
+
+Call:
+lm(formula = preis ~ age + kilometer + leistung + garantie + 
+    as.factor(fahrzeugart), data = DealerWRatingData)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-10983.7  -1482.7   -246.7   1255.6  15427.9 
+
+Coefficients:
+                                       Estimate Std. Error  t value Pr(>|t|)    
+(Intercept)                          13588.6742    52.9002  256.874  < 2e-16 ***
+age                                   -101.0782     0.6071 -166.487  < 2e-16 ***
+kilometer                             -401.6717     3.8798 -103.529  < 2e-16 ***
+leistung                                94.4241     0.5062  186.520  < 2e-16 ***
+garantieTRUE                           164.5753    25.2632    6.514 7.38e-11 ***
+as.factor(fahrzeugart)Jahreswagen      368.7604    34.9578   10.549  < 2e-16 ***
+as.factor(fahrzeugart)Tageszulassung   279.5376    62.3273    4.485 7.31e-06 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 2109 on 41126 degrees of freedom
+Multiple R-squared:  0.8324,	Adjusted R-squared:  0.8324 
+F-statistic: 3.405e+04 on 6 and 41126 DF,  p-value: < 2.2e-16
+
+
+ANOVA of Linear Model
+Analysis of Variance Table
+
+Response: preis
+                          Df     Sum Sq    Mean Sq    F value    Pr(>F)    
+age                        1 7.1285e+11 7.1285e+11 160226.464 < 2.2e-16 ***
+kilometer                  1 4.0402e+10 4.0402e+10   9081.164 < 2.2e-16 ***
+leistung                   1 1.5498e+11 1.5498e+11  34835.296 < 2.2e-16 ***
+garantie                   1 2.0256e+08 2.0256e+08     45.529 1.524e-11 ***
+as.factor(fahrzeugart)     2 5.4999e+08 2.7500e+08     61.810 < 2.2e-16 ***
+Residuals              41126 1.8297e+11 4.4490e+06                         
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+
+Stepwise Regression
+Start:  AIC=629679.1
+preis ~ age + kilometer + leistung + garantie + as.factor(fahrzeugart)
+
+                         Df  Sum of Sq        RSS    AIC
+<none>                                 1.8297e+11 629679
+- garantie                1 1.8881e+08 1.8316e+11 629719
+- as.factor(fahrzeugart)  2 5.4999e+08 1.8352e+11 629799
+- kilometer               1 4.7686e+10 2.3066e+11 639204
+- age                     1 1.2332e+11 3.0629e+11 650869
+- leistung                1 1.5478e+11 3.3775e+11 654891

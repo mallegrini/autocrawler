@@ -1,0 +1,41 @@
+Linear Model: average_rating_only 
+
+Linear Regression
+
+Call:
+lm(formula = log(preis) ~ bewertung_durchschnitt, data = DealerWRatingData)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-1.92673 -0.16858  0.09635  0.23102  0.96933 
+
+Coefficients:
+                       Estimate Std. Error t value Pr(>|t|)    
+(Intercept)            9.489312   0.012958  732.29   <2e-16 ***
+bewertung_durchschnitt 0.053028   0.003024   17.54   <2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.3456 on 41363 degrees of freedom
+Multiple R-squared:  0.007381,	Adjusted R-squared:  0.007357 
+F-statistic: 307.6 on 1 and 41363 DF,  p-value: < 2.2e-16
+
+
+ANOVA of Linear Model
+Analysis of Variance Table
+
+Response: log(preis)
+                          Df Sum Sq Mean Sq F value    Pr(>F)    
+bewertung_durchschnitt     1   36.7  36.740  307.57 < 2.2e-16 ***
+Residuals              41363 4940.9   0.119                      
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+
+Stepwise Regression
+Start:  AIC=-87892.22
+log(preis) ~ bewertung_durchschnitt
+
+                         Df Sum of Sq    RSS    AIC
+<none>                                4940.9 -87892
+- bewertung_durchschnitt  1     36.74 4977.6 -87588

@@ -1,0 +1,59 @@
+Linear Model: rating_purchase_experience 
+
+Linear Regression
+
+Call:
+lm(formula = preis ~ age + kilometer + bewertung_kauferlebnis + 
+    leistung + garantie + as.factor(fahrzeugart), data = DealerWRatingData)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-10978.2  -1483.4   -245.5   1256.2  15481.5 
+
+Coefficients:
+                                       Estimate Std. Error  t value Pr(>|t|)    
+(Intercept)                          13395.8051    64.3495  208.173  < 2e-16 ***
+age                                   -101.1009     0.6069 -166.574  < 2e-16 ***
+kilometer                             -400.8929     3.8814 -103.287  < 2e-16 ***
+bewertung_kauferlebnis                  49.9697     9.4991    5.260 1.44e-07 ***
+leistung                                94.3664     0.5062  186.423  < 2e-16 ***
+garantieTRUE                           161.6115    25.2613    6.398 1.60e-10 ***
+as.factor(fahrzeugart)Jahreswagen      367.4893    34.9473   10.516  < 2e-16 ***
+as.factor(fahrzeugart)Tageszulassung   282.5185    62.3097    4.534 5.80e-06 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 2109 on 41125 degrees of freedom
+Multiple R-squared:  0.8326,	Adjusted R-squared:  0.8325 
+F-statistic: 2.921e+04 on 7 and 41125 DF,  p-value: < 2.2e-16
+
+
+ANOVA of Linear Model
+Analysis of Variance Table
+
+Response: preis
+                          Df     Sum Sq    Mean Sq    F value    Pr(>F)    
+age                        1 7.1285e+11 7.1285e+11 160330.380 < 2.2e-16 ***
+kilometer                  1 4.0402e+10 4.0402e+10   9087.054 < 2.2e-16 ***
+bewertung_kauferlebnis     1 4.0734e+08 4.0734e+08     91.617 < 2.2e-16 ***
+leistung                   1 1.5471e+11 1.5471e+11  34796.072 < 2.2e-16 ***
+garantie                   1 1.9489e+08 1.9489e+08     43.834 3.618e-11 ***
+as.factor(fahrzeugart)     2 5.4820e+08 2.7410e+08     61.649 < 2.2e-16 ***
+Residuals              41125 1.8285e+11 4.4461e+06                         
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+
+Stepwise Regression
+Start:  AIC=629653.4
+preis ~ age + kilometer + bewertung_kauferlebnis + leistung + 
+    garantie + as.factor(fahrzeugart)
+
+                         Df  Sum of Sq        RSS    AIC
+<none>                                 1.8285e+11 629653
+- bewertung_kauferlebnis  1 1.2304e+08 1.8297e+11 629679
+- garantie                1 1.8198e+08 1.8303e+11 629692
+- as.factor(fahrzeugart)  2 5.4820e+08 1.8340e+11 629773
+- kilometer               1 4.7432e+10 2.3028e+11 639138
+- age                     1 1.2337e+11 3.0621e+11 650861
+- leistung                1 1.5452e+11 3.3737e+11 654846

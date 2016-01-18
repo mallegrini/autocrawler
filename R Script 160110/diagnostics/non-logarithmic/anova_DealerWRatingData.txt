@@ -1,0 +1,9 @@
+ANOVA of linear models average_rating & without_rating from DealerWRatingData 
+     Res.Df           RSS                  Df      Sum of Sq               F             Pr(>F) 
+ Min.   :41125   Min.   :1.828e+11   Min.   :1   Min.   :184796190   Min.   :41.58   Min.   :0  
+ 1st Qu.:41125   1st Qu.:1.828e+11   1st Qu.:1   1st Qu.:184796190   1st Qu.:41.58   1st Qu.:0  
+ Median :41126   Median :1.829e+11   Median :1   Median :184796190   Median :41.58   Median :0  
+ Mean   :41126   Mean   :1.829e+11   Mean   :1   Mean   :184796190   Mean   :41.58   Mean   :0  
+ 3rd Qu.:41126   3rd Qu.:1.829e+11   3rd Qu.:1   3rd Qu.:184796190   3rd Qu.:41.58   3rd Qu.:0  
+ Max.   :41126   Max.   :1.830e+11   Max.   :1   Max.   :184796190   Max.   :41.58   Max.   :0  
+                                     NA's   :1   NA's   :1           NA's   :1       NA's   :1  

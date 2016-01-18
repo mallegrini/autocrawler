@@ -1,0 +1,41 @@
+Linear Model: seller_type_3 
+
+Linear Regression
+
+Call:
+lm(formula = log(preis) ~ as.factor(anbieter_typ), data = SumData)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-2.0954 -0.2234  0.1000  0.2541  1.0075 
+
+Coefficients:
+                                          Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                               9.695330   0.001703 5693.16   <2e-16 ***
+as.factor(anbieter_typ)Privater Anbieter -0.422230   0.004637  -91.06   <2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.3774 on 56758 degrees of freedom
+Multiple R-squared:  0.1275,	Adjusted R-squared:  0.1275 
+F-statistic:  8292 on 1 and 56758 DF,  p-value: < 2.2e-16
+
+
+ANOVA of Linear Model
+Analysis of Variance Table
+
+Response: log(preis)
+                           Df Sum Sq Mean Sq F value    Pr(>F)    
+as.factor(anbieter_typ)     1 1180.8 1180.80  8291.6 < 2.2e-16 ***
+Residuals               56758 8082.8    0.14                      
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+
+Stepwise Regression
+Start:  AIC=-110626.4
+log(preis) ~ as.factor(anbieter_typ)
+
+                          Df Sum of Sq    RSS     AIC
+<none>                                 8082.8 -110626
+- as.factor(anbieter_typ)  1    1180.8 9263.6 -102889

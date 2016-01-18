@@ -1,0 +1,51 @@
+Linear Model: elasticity 
+
+Linear Regression
+
+Call:
+lm(formula = log(preis) ~ age + kilometer + leistung + log(bewertung_durchschnitt), 
+    data = DealerWRatingData)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-0.79351 -0.07666 -0.00373  0.07190  0.61850 
+
+Coefficients:
+                              Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                  9.487e+00  5.469e-03 1734.75   <2e-16 ***
+age                         -7.538e-03  3.121e-05 -241.55   <2e-16 ***
+kilometer                   -2.798e-02  2.021e-04 -138.45   <2e-16 ***
+leistung                     5.484e-03  2.665e-05  205.79   <2e-16 ***
+log(bewertung_durchschnitt)  4.356e-02  3.402e-03   12.81   <2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.1113 on 41360 degrees of freedom
+Multiple R-squared:  0.8972,	Adjusted R-squared:  0.8971 
+F-statistic: 9.02e+04 on 4 and 41360 DF,  p-value: < 2.2e-16
+
+
+ANOVA of Linear Model
+Analysis of Variance Table
+
+Response: log(preis)
+                               Df Sum Sq Mean Sq F value    Pr(>F)    
+age                             1 3736.5  3736.5  301874 < 2.2e-16 ***
+kilometer                       1  201.4   201.4   16271 < 2.2e-16 ***
+leistung                        1  525.7   525.7   42475 < 2.2e-16 ***
+log(bewertung_durchschnitt)     1    2.0     2.0     164 < 2.2e-16 ***
+Residuals                   41360  511.9     0.0                      
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+
+Stepwise Regression
+Start:  AIC=-181664.3
+log(preis) ~ age + kilometer + leistung + log(bewertung_durchschnitt)
+
+                              Df Sum of Sq     RSS     AIC
+<none>                                      511.94 -181664
+- log(bewertung_durchschnitt)  1      2.03  513.97 -181503
+- kilometer                    1    237.25  749.19 -165915
+- leistung                     1    524.20 1036.14 -152502
+- age                          1    722.17 1234.11 -145269

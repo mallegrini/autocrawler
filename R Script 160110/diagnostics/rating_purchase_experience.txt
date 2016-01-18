@@ -1,0 +1,55 @@
+Linear Model: rating_purchase_experience 
+
+Linear Regression
+
+Call:
+lm(formula = log(preis) ~ age + kilometer + leistung + as.factor(garantie) + 
+    bewertung_kauferlebnis, data = DealerWRatingData)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-0.79711 -0.07666 -0.00378  0.07206  0.61696 
+
+Coefficients:
+                          Estimate Std. Error  t value Pr(>|t|)    
+(Intercept)              9.516e+00  3.370e-03 2824.103   <2e-16 ***
+age                     -7.482e-03  3.153e-05 -237.329   <2e-16 ***
+kilometer               -2.777e-02  2.034e-04 -136.540   <2e-16 ***
+leistung                 5.485e-03  2.663e-05  205.994   <2e-16 ***
+as.factor(garantie)TRUE  1.501e-02  1.320e-03   11.368   <2e-16 ***
+bewertung_kauferlebnis   4.930e-03  5.052e-04    9.758   <2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.1112 on 41359 degrees of freedom
+Multiple R-squared:  0.8973,	Adjusted R-squared:  0.8973 
+F-statistic: 7.228e+04 on 5 and 41359 DF,  p-value: < 2.2e-16
+
+
+ANOVA of Linear Model
+Analysis of Variance Table
+
+Response: log(preis)
+                          Df Sum Sq Mean Sq    F value    Pr(>F)    
+age                        1 3736.5  3736.5 302341.001 < 2.2e-16 ***
+kilometer                  1  201.4   201.4  16295.856 < 2.2e-16 ***
+leistung                   1  525.7   525.7  42540.709 < 2.2e-16 ***
+as.factor(garantie)        1    1.7     1.7    134.019 < 2.2e-16 ***
+bewertung_kauferlebnis     1    1.2     1.2     95.226 < 2.2e-16 ***
+Residuals              41359  511.1     0.0                         
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+
+Stepwise Regression
+Start:  AIC=-181727.2
+log(preis) ~ age + kilometer + leistung + as.factor(garantie) + 
+    bewertung_kauferlebnis
+
+                         Df Sum of Sq     RSS     AIC
+<none>                                 511.14 -181727
+- bewertung_kauferlebnis  1      1.18  512.32 -181634
+- as.factor(garantie)     1      1.60  512.74 -181600
+- kilometer               1    230.40  741.54 -166338
+- leistung                1    524.42 1035.56 -152523
+- age                     1    696.10 1207.24 -146178

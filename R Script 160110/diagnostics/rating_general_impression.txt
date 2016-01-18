@@ -1,0 +1,55 @@
+Linear Model: rating_general_impression 
+
+Linear Regression
+
+Call:
+lm(formula = log(preis) ~ age + kilometer + leistung + as.factor(garantie) + 
+    bewertung_gesamteindruck, data = DealerWRatingData)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-0.78875 -0.07661 -0.00392  0.07181  0.62963 
+
+Coefficients:
+                           Estimate Std. Error t value Pr(>|t|)    
+(Intercept)               9.481e+00  4.644e-03 2041.66   <2e-16 ***
+age                      -7.493e-03  3.149e-05 -237.91   <2e-16 ***
+kilometer                -2.764e-02  2.035e-04 -135.84   <2e-16 ***
+leistung                  5.483e-03  2.659e-05  206.21   <2e-16 ***
+as.factor(garantie)TRUE   1.480e-02  1.318e-03   11.22   <2e-16 ***
+bewertung_gesamteindruck  1.311e-02  8.942e-04   14.66   <2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.111 on 41359 degrees of freedom
+Multiple R-squared:  0.8976,	Adjusted R-squared:  0.8976 
+F-statistic: 7.251e+04 on 5 and 41359 DF,  p-value: < 2.2e-16
+
+
+ANOVA of Linear Model
+Analysis of Variance Table
+
+Response: log(preis)
+                            Df Sum Sq Mean Sq   F value    Pr(>F)    
+age                          1 3736.5  3736.5 303214.67 < 2.2e-16 ***
+kilometer                    1  201.4   201.4  16342.95 < 2.2e-16 ***
+leistung                     1  525.7   525.7  42663.64 < 2.2e-16 ***
+as.factor(garantie)          1    1.7     1.7    134.41 < 2.2e-16 ***
+bewertung_gesamteindruck     1    2.6     2.6    215.02 < 2.2e-16 ***
+Residuals                41359  509.7     0.0                        
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+
+Stepwise Regression
+Start:  AIC=-181846.6
+log(preis) ~ age + kilometer + leistung + as.factor(garantie) + 
+    bewertung_gesamteindruck
+
+                           Df Sum of Sq     RSS     AIC
+<none>                                   509.67 -181847
+- as.factor(garantie)       1      1.55  511.22 -181723
+- bewertung_gesamteindruck  1      2.65  512.32 -181634
+- kilometer                 1    227.39  737.06 -166589
+- leistung                  1    524.02 1033.68 -152598
+- age                       1    697.51 1207.18 -146180

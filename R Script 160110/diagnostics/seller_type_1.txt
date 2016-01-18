@@ -1,0 +1,63 @@
+Linear Model: seller_type_1 
+
+Linear Regression
+
+Call:
+lm(formula = log(preis) ~ age + kilometer + leistung + as.factor(treibstoff) + 
+    as.factor(scheckheftgepflegt) + as.factor(nichtraucherfahrzeug) + 
+    as.factor(anbieter_typ), data = SumData)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-1.30395 -0.07387 -0.00412  0.07042  3.02461 
+
+Coefficients:
+                                           Estimate Std. Error  t value Pr(>|t|)    
+(Intercept)                               9.501e+00  2.223e-03 4274.298  < 2e-16 ***
+age                                      -7.102e-03  2.637e-05 -269.287  < 2e-16 ***
+kilometer                                -3.190e-02  1.691e-04 -188.618  < 2e-16 ***
+leistung                                  5.529e-03  2.112e-05  261.784  < 2e-16 ***
+as.factor(treibstoff)Diesel               7.741e-02  1.055e-03   73.375  < 2e-16 ***
+as.factor(scheckheftgepflegt)TRUE         1.436e-02  1.232e-03   11.660  < 2e-16 ***
+as.factor(nichtraucherfahrzeug)TRUE       4.107e-03  1.023e-03    4.015 5.95e-05 ***
+as.factor(anbieter_typ)Privater Anbieter  7.988e-03  1.596e-03    5.004 5.62e-07 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.114 on 56752 degrees of freedom
+Multiple R-squared:  0.9204,	Adjusted R-squared:  0.9204 
+F-statistic: 9.376e+04 on 7 and 56752 DF,  p-value: < 2.2e-16
+
+
+ANOVA of Linear Model
+Analysis of Variance Table
+
+Response: log(preis)
+                                   Df Sum Sq Mean Sq    F value    Pr(>F)    
+age                                 1 7196.4  7196.4 553974.296 < 2.2e-16 ***
+kilometer                           1  338.1   338.1  26023.568 < 2.2e-16 ***
+leistung                            1  919.1   919.1  70749.000 < 2.2e-16 ***
+as.factor(treibstoff)               1   69.9    69.9   5381.230 < 2.2e-16 ***
+as.factor(scheckheftgepflegt)       1    2.3     2.3    178.230 < 2.2e-16 ***
+as.factor(nichtraucherfahrzeug)     1    0.3     0.3     21.378 3.779e-06 ***
+as.factor(anbieter_typ)             1    0.3     0.3     25.043 5.624e-07 ***
+Residuals                       56752  737.2     0.0                         
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+
+Stepwise Regression
+Start:  AIC=-246531
+log(preis) ~ age + kilometer + leistung + as.factor(treibstoff) + 
+    as.factor(scheckheftgepflegt) + as.factor(nichtraucherfahrzeug) + 
+    as.factor(anbieter_typ)
+
+                                  Df Sum of Sq     RSS     AIC
+<none>                                          737.24 -246531
+- as.factor(nichtraucherfahrzeug)  1      0.21  737.45 -246517
+- as.factor(anbieter_typ)          1      0.33  737.56 -246508
+- as.factor(scheckheftgepflegt)    1      1.77  739.01 -246397
+- as.factor(treibstoff)            1     69.94  807.18 -241389
+- kilometer                        1    462.16 1199.40 -218910
+- leistung                         1    890.25 1627.49 -201586
+- age                              1    942.02 1679.25 -199809

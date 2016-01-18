@@ -1,0 +1,47 @@
+Linear Model: elasticity 
+
+Linear Regression
+
+Call:
+lm(formula = logp ~ age_el + km + lograting, data = ElasticityData)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-0.95380 -0.10317 -0.00982  0.09305  1.13083 
+
+Coefficients:
+              Estimate Std. Error t value Pr(>|t|)    
+(Intercept)  9.9766430  0.0070629 1412.55   <2e-16 ***
+age_el      -0.0078936  0.0000445 -177.40   <2e-16 ***
+km          -0.0254568  0.0002877  -88.49   <2e-16 ***
+lograting    0.0500568  0.0048174   10.39   <2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.158 on 41129 degrees of freedom
+Multiple R-squared:  0.7927,	Adjusted R-squared:  0.7927 
+F-statistic: 5.242e+04 on 3 and 41129 DF,  p-value: < 2.2e-16
+
+
+ANOVA of Linear Model
+Analysis of Variance Table
+
+Response: logp
+             Df Sum Sq Mean Sq   F value    Pr(>F)    
+age_el        1 3725.6  3725.6 149169.43 < 2.2e-16 ***
+km            1  199.5   199.5   7987.32 < 2.2e-16 ***
+lograting     1    2.7     2.7    107.97 < 2.2e-16 ***
+Residuals 41129 1027.2     0.0                        
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+
+Stepwise Regression
+Start:  AIC=-151770.6
+logp ~ age_el + km + lograting
+
+            Df Sum of Sq    RSS     AIC
+<none>                   1027.2 -151771
+- lograting  1      2.70 1029.9 -151665
+- km         1    195.59 1222.8 -144604
+- age_el     1    786.00 1813.2 -128399

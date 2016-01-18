@@ -1,0 +1,46 @@
+Descriptive Statistics of PrivateData
+                    preis    kilometer     leistung erstzulassung_jahr     mfk_jahr fahrzeughalter bewertung_durchschnitt
+nbr.val      7.656000e+03 7.656000e+03 7.656000e+03       7.656000e+03 5.094000e+03   4.488000e+03                      0
+nbr.null     0.000000e+00 0.000000e+00 0.000000e+00       0.000000e+00 0.000000e+00   0.000000e+00                      0
+nbr.na       0.000000e+00 0.000000e+00 0.000000e+00       0.000000e+00 2.562000e+03   3.168000e+03                   7656
+min          1.999000e+03 1.000000e-04 4.900000e+01       2.005000e+03 2.005000e+03   1.000000e+00                    Inf
+max          2.850000e+04 1.090150e+02 2.470000e+02       2.015000e+03 2.018000e+03   5.000000e+00                   -Inf
+range        2.650100e+04 1.090149e+02 1.980000e+02       1.000000e+01 1.300000e+01   4.000000e+00                   -Inf
+sum          9.033926e+07 7.024905e+04 7.394740e+05       1.538326e+07 1.027078e+07   7.709000e+03                      0
+median       1.050000e+04 8.267850e+00 8.500000e+01       2.009000e+03 2.016000e+03   2.000000e+00                     NA
+mean         1.179980e+04 9.175685e+00 9.658751e+01       2.009308e+03 2.016251e+03   1.717692e+00                    NaN
+SE.mean      6.153729e+01 6.700326e-02 3.858109e-01       3.053960e-02 1.049554e-02   9.028000e-03                     NA
+CI.mean.0.95 1.206299e+02 1.313447e-01 7.562950e-01       5.986598e-02 2.057577e-02   1.769933e-02                     NA
+var          2.899203e+07 3.437113e+01 1.139596e+03       7.140499e+00 5.611367e-01   3.657935e-01                     NA
+std.dev      5.384425e+03 5.862690e+00 3.375790e+01       2.672171e+00 7.490906e-01   6.048086e-01                     NA
+coef.var     4.563149e-01 6.389375e-01 3.495058e-01       1.329896e-03 3.715264e-04   3.521055e-01                     NA
+             bewertung_erreichbarkeit bewertung_zuverlaessigkeit bewertung_angebotsbeschreibung bewertung_kauferlebnis
+nbr.val                             0                          0                              0                      0
+nbr.null                            0                          0                              0                      0
+nbr.na                           7656                       7656                           7656                   7656
+min                               Inf                        Inf                            Inf                    Inf
+max                              -Inf                       -Inf                           -Inf                   -Inf
+range                            -Inf                       -Inf                           -Inf                   -Inf
+sum                                 0                          0                              0                      0
+median                             NA                         NA                             NA                     NA
+mean                              NaN                        NaN                            NaN                    NaN
+SE.mean                            NA                         NA                             NA                     NA
+CI.mean.0.95                       NA                         NA                             NA                     NA
+var                                NA                         NA                             NA                     NA
+std.dev                            NA                         NA                             NA                     NA
+coef.var                           NA                         NA                             NA                     NA
+             anzahl_bewertungen prozentsatz_weiterempfehlungen          age
+nbr.val                       0                              0 7.656000e+03
+nbr.null                      0                              0 0.000000e+00
+nbr.na                     7656                           7656 0.000000e+00
+min                         Inf                            Inf 1.000000e+00
+max                        -Inf                           -Inf 1.300000e+02
+range                      -Inf                           -Inf 1.290000e+02
+sum                           0                              0 5.569970e+05
+median                       NA                             NA 7.300000e+01
+mean                        NaN                            NaN 7.275300e+01
+SE.mean                      NA                             NA 3.656249e-01
+CI.mean.0.95                 NA                             NA 7.167249e-01
+var                          NA                             NA 1.023466e+03
+std.dev                      NA                             NA 3.199165e+01
+coef.var                     NA                             NA 4.397297e-01

@@ -1,0 +1,55 @@
+Linear Model: average_rating 
+
+Linear Regression
+
+Call:
+lm(formula = log(preis) ~ age + kilometer + leistung + as.factor(garantie) + 
+    bewertung_durchschnitt, data = DealerWRatingData)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-0.78800 -0.07649 -0.00409  0.07182  0.62614 
+
+Coefficients:
+                          Estimate Std. Error t value Pr(>|t|)    
+(Intercept)              9.476e+00  4.937e-03 1919.34   <2e-16 ***
+age                     -7.492e-03  3.149e-05 -237.89   <2e-16 ***
+kilometer               -2.765e-02  2.034e-04 -135.90   <2e-16 ***
+leistung                 5.483e-03  2.659e-05  206.20   <2e-16 ***
+as.factor(garantie)TRUE  1.498e-02  1.318e-03   11.36   <2e-16 ***
+bewertung_durchschnitt   1.421e-02  9.751e-04   14.57   <2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.111 on 41359 degrees of freedom
+Multiple R-squared:  0.8976,	Adjusted R-squared:  0.8976 
+F-statistic: 7.251e+04 on 5 and 41359 DF,  p-value: < 2.2e-16
+
+
+ANOVA of Linear Model
+Analysis of Variance Table
+
+Response: log(preis)
+                          Df Sum Sq Mean Sq   F value    Pr(>F)    
+age                        1 3736.5  3736.5 303195.75 < 2.2e-16 ***
+kilometer                  1  201.4   201.4  16341.93 < 2.2e-16 ***
+leistung                   1  525.7   525.7  42660.98 < 2.2e-16 ***
+as.factor(garantie)        1    1.7     1.7    134.40 < 2.2e-16 ***
+bewertung_durchschnitt     1    2.6     2.6    212.42 < 2.2e-16 ***
+Residuals              41359  509.7     0.0                        
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+
+Stepwise Regression
+Start:  AIC=-181844
+log(preis) ~ age + kilometer + leistung + as.factor(garantie) + 
+    bewertung_durchschnitt
+
+                         Df Sum of Sq     RSS     AIC
+<none>                                 509.70 -181844
+- as.factor(garantie)     1      1.59  511.29 -181717
+- bewertung_durchschnitt  1      2.62  512.32 -181634
+- kilometer               1    227.59  737.28 -166576
+- leistung                1    523.99 1033.69 -152598
+- age                     1    697.42 1207.12 -146182

@@ -1,0 +1,46 @@
+Descriptive Statistics of DealerWORatingData
+                    preis    kilometer     leistung erstzulassung_jahr     mfk_jahr fahrzeughalter bewertung_durchschnitt
+nbr.val      7.739000e+03 7.739000e+03 7.739000e+03       7.739000e+03 3.002000e+03   6.487000e+03                   5225
+nbr.null     0.000000e+00 0.000000e+00 0.000000e+00       0.000000e+00 0.000000e+00   0.000000e+00                   5225
+nbr.na       0.000000e+00 0.000000e+00 0.000000e+00       0.000000e+00 4.737000e+03   1.252000e+03                   2514
+min          1.998000e+03 1.000000e-04 5.000000e+01       2.005000e+03 2.006000e+03   1.000000e+00                      0
+max          4.448000e+04 4.103230e+01 2.280000e+02       2.015000e+03 2.018000e+03   4.000000e+00                      0
+range        4.248200e+04 4.103220e+01 1.780000e+02       1.000000e+01 1.200000e+01   3.000000e+00                      0
+sum          1.227784e+08 3.814008e+04 6.636670e+05       1.557195e+07 6.054003e+06   7.582000e+03                      0
+median       1.691500e+04 2.634200e+00 8.100000e+01       2.014000e+03 2.017000e+03   1.000000e+00                      0
+mean         1.586490e+04 4.928296e+00 8.575617e+01       2.012139e+03 2.016657e+03   1.168799e+00                      0
+SE.mean      6.471563e+01 5.930691e-02 2.244869e-01       3.218737e-02 1.524913e-02   5.038587e-03                      0
+CI.mean.0.95 1.268601e+02 1.162576e-01 4.400550e-01       6.309596e-02 2.989980e-02   9.877292e-03                      0
+var          3.241180e+07 2.722046e+01 3.900019e+02       8.017813e+00 6.980726e-01   1.646878e-01                      0
+std.dev      5.693136e+03 5.217323e+00 1.974847e+01       2.831574e+00 8.355074e-01   4.058174e-01                      0
+coef.var     3.588512e-01 1.058647e+00 2.302862e-01       1.407246e-03 4.143032e-04   3.472089e-01                    NaN
+             bewertung_erreichbarkeit bewertung_zuverlaessigkeit bewertung_angebotsbeschreibung bewertung_kauferlebnis
+nbr.val                          5225                       5225                           5225                   5225
+nbr.null                         5225                       5225                           5225                   5225
+nbr.na                           2514                       2514                           2514                   2514
+min                                 0                          0                              0                      0
+max                                 0                          0                              0                      0
+range                               0                          0                              0                      0
+sum                                 0                          0                              0                      0
+median                              0                          0                              0                      0
+mean                                0                          0                              0                      0
+SE.mean                             0                          0                              0                      0
+CI.mean.0.95                        0                          0                              0                      0
+var                                 0                          0                              0                      0
+std.dev                             0                          0                              0                      0
+coef.var                          NaN                        NaN                            NaN                    NaN
+             anzahl_bewertungen prozentsatz_weiterempfehlungen          age
+nbr.val                    5225                           5225 7.739000e+03
+nbr.null                   5225                           5225 1.200000e+01
+nbr.na                     2514                           2514 0.000000e+00
+min                           0                              0 0.000000e+00
+max                           0                              0 1.300000e+02
+range                         0                              0 1.300000e+02
+sum                           0                              0 2.974490e+05
+median                        0                              0 2.000000e+01
+mean                          0                              0 3.843507e+01
+SE.mean                       0                              0 3.889882e-01
+CI.mean.0.95                  0                              0 7.625222e-01
+var                           0                              0 1.171002e+03
+std.dev                       0                              0 3.421991e+01
+coef.var                    NaN                            NaN 8.903304e-01

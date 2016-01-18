@@ -1,0 +1,58 @@
+Linear Model: number_of_rating 
+
+Linear Regression
+
+Call:
+lm(formula = log(preis) ~ age + kilometer + leistung + as.factor(garantie) + 
+    bewertung_durchschnitt + anzahl_bewertungen, data = DealerWRatingData)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-0.78830 -0.07662 -0.00412  0.07177  0.62386 
+
+Coefficients:
+                          Estimate Std. Error  t value Pr(>|t|)    
+(Intercept)              9.477e+00  4.945e-03 1916.697  < 2e-16 ***
+age                     -7.511e-03  3.169e-05 -236.989  < 2e-16 ***
+kilometer               -2.757e-02  2.039e-04 -135.214  < 2e-16 ***
+leistung                 5.488e-03  2.660e-05  206.313  < 2e-16 ***
+as.factor(garantie)TRUE  1.442e-02  1.322e-03   10.911  < 2e-16 ***
+bewertung_durchschnitt   1.430e-02  9.749e-04   14.670  < 2e-16 ***
+anzahl_bewertungen      -1.571e-04  3.010e-05   -5.218 1.81e-07 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.111 on 41358 degrees of freedom
+Multiple R-squared:  0.8977,	Adjusted R-squared:  0.8977 
+F-statistic: 6.047e+04 on 6 and 41358 DF,  p-value: < 2.2e-16
+
+
+ANOVA of Linear Model
+Analysis of Variance Table
+
+Response: log(preis)
+                          Df Sum Sq Mean Sq    F value    Pr(>F)    
+age                        1 3736.5  3736.5 303388.045 < 2.2e-16 ***
+kilometer                  1  201.4   201.4  16352.291 < 2.2e-16 ***
+leistung                   1  525.7   525.7  42688.033 < 2.2e-16 ***
+as.factor(garantie)        1    1.7     1.7    134.483 < 2.2e-16 ***
+bewertung_durchschnitt     1    2.6     2.6    212.555 < 2.2e-16 ***
+anzahl_bewertungen         1    0.3     0.3     27.232 1.814e-07 ***
+Residuals              41358  509.4     0.0                         
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+
+Stepwise Regression
+Start:  AIC=-181869.2
+log(preis) ~ age + kilometer + leistung + as.factor(garantie) + 
+    bewertung_durchschnitt + anzahl_bewertungen
+
+                         Df Sum of Sq     RSS     AIC
+<none>                                 509.36 -181869
+- anzahl_bewertungen      1      0.34  509.70 -181844
+- as.factor(garantie)     1      1.47  510.83 -181752
+- bewertung_durchschnitt  1      2.65  512.01 -181657
+- kilometer               1    225.17  734.53 -166729
+- leistung                1    524.23 1033.59 -152600
+- age                     1    691.71 1201.07 -146388

@@ -1,0 +1,48 @@
+Linear Model: seller_type_2 
+
+Linear Regression
+
+Call:
+lm(formula = preis ~ age + kilometer + as.factor(anbieter_typ), 
+    data = SumData)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-9160.6 -1988.1  -391.5  1612.8 23067.0 
+
+Coefficients:
+                                           Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                              22001.7094    18.1025 1215.39   <2e-16 ***
+age                                       -108.6184     0.6339 -171.35   <2e-16 ***
+kilometer                                 -328.0656     4.0014  -81.99   <2e-16 ***
+as.factor(anbieter_typ)Privater Anbieter   783.8685    39.7172   19.74   <2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 2896 on 56745 degrees of freedom
+Multiple R-squared:  0.7369,	Adjusted R-squared:  0.7369 
+F-statistic: 5.298e+04 on 3 and 56745 DF,  p-value: < 2.2e-16
+
+
+ANOVA of Linear Model
+Analysis of Variance Table
+
+Response: preis
+                           Df     Sum Sq    Mean Sq   F value    Pr(>F)    
+age                         1 1.2735e+12 1.2735e+12 151888.93 < 2.2e-16 ***
+kilometer                   1 5.5874e+10 5.5874e+10   6664.23 < 2.2e-16 ***
+as.factor(anbieter_typ)     1 3.2658e+09 3.2658e+09    389.52 < 2.2e-16 ***
+Residuals               56745 4.7576e+11 8.3842e+06                        
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+
+Stepwise Regression
+Start:  AIC=904688.4
+preis ~ age + kilometer + as.factor(anbieter_typ)
+
+                          Df  Sum of Sq        RSS    AIC
+<none>                                  4.7576e+11 904688
+- as.factor(anbieter_typ)  1 3.2658e+09 4.7903e+11 905075
+- kilometer                1 5.6357e+10 5.3212e+11 911039
+- age                      1 2.4617e+11 7.2193e+11 928352
