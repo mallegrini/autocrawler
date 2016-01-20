@@ -51,6 +51,21 @@ print(descriptive_stats_PrivateData)
 sink()
 rm(descriptive_stats_PrivateData)
 
+
+# exporting descriptive statistics from dealer_rating
+descriptive_stats_dealer_rating <- stat.desc(dealer_rating[,c("Dealer Name","Number of Rating","Average Rating", 
+                                                              "Overall Impression Rating", "Reachability Rating", 
+                                                              "Reliability Rating", "Offer Description Rating", 
+                                                              "Shopping Experience Rating", "Reccommendation Tendency")])
+
+sink("diagnostics/descriptive_stats_dealer_rating.txt")
+cat("Descriptive Statistics of dealer_rating\n")
+print(descriptive_stats_dealer_rating)
+sink()
+rm(descriptive_stats_dealer_rating)
+
+
+
 # exporting descriptive statistics from tdi_may
 descriptive_stats_tdi_may <- stat.desc(tdi_may)
 
