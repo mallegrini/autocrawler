@@ -8,7 +8,7 @@ tdi_may_vector <- volkswagen_golf_150511$angebotsnummer %in% tdi_october$angebot
 tdi_may <- volkswagen_golf_150511[tdi_may_vector,]
 
 # introduce the age column and filter negative age
-tdi_may <- merge_age_vector(tdi_may)
+tdi_may <- merge_age_vector_may(tdi_may)
 tdi_may <- tdi_may[which(tdi_may$age >= 0),]
 
 #limit tdi_october to diesel tdi cars that also appeared in may

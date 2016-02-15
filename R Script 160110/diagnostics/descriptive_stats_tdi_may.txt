@@ -121,16 +121,16 @@ std.dev                            NA    NA        NA            NA         NA  
 coef.var                           NA    NA        NA            NA         NA                NA                 NA
          nichtraucherfahrzeug link          age
 nbr.val                    NA   NA 2.017000e+03
-nbr.null                   NA   NA 0.000000e+00
+nbr.null                   NA   NA 5.000000e+00
 nbr.na                     NA   NA 0.000000e+00
-min                        NA   NA 6.000000e+00
-max                        NA   NA 1.300000e+02
+min                        NA   NA 0.000000e+00
+max                        NA   NA 1.240000e+02
 range                      NA   NA 1.240000e+02
-sum                        NA   NA 8.904800e+04
-median                     NA   NA 3.100000e+01
-mean                       NA   NA 4.414874e+01
+sum                        NA   NA 7.694600e+04
+median                     NA   NA 2.500000e+01
+mean                       NA   NA 3.814874e+01
 SE.mean                    NA   NA 7.516546e-01
 CI.mean                    NA   NA 1.474101e+00
 var                        NA   NA 1.139574e+03
 std.dev                    NA   NA 3.375758e+01
-coef.var                   NA   NA 7.646330e-01
+coef.var                   NA   NA 8.848938e-01

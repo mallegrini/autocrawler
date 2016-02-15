@@ -1,5 +1,7 @@
-Descriptive Statistics of dealer_rating
-         Dealer Name Number of Rating Average Rating Overall Impression Rating Reachability Rating Reliability Rating
+function() {
+  save.image("autoscout24_160110.Rdata")
+}
+me Number of Rating Average Rating Overall Impression Rating Reachability Rating Reliability Rating
 nbr.val           NA     4.179000e+03   4.179000e+03              4.179000e+03        4.179000e+03       4.179000e+03
 nbr.null          NA     0.000000e+00   0.000000e+00              0.000000e+00        2.400000e+01       5.100000e+01
 nbr.na            NA     0.000000e+00   0.000000e+00              0.000000e+00        0.000000e+00       0.000000e+00

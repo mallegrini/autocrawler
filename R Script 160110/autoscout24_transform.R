@@ -209,7 +209,7 @@ filter_SumData_may <- function(d) {
   d <- d[which(d$treibstoff == 'Benzin' | d$treibstoff == 'Diesel'),]
   
   # introduce the age column and filter negative age
-  d <- merge_age_vector(d)
+  d <- merge_age_vector_may(d)
   d <- d[which(d$age >= 0),]
   
   return(d)
@@ -236,7 +236,7 @@ filter_SumData <- function(d) {
   d <- d[which(d$treibstoff == 'Benzin' | d$treibstoff == 'Diesel'),]
   
   # introduce the age column and filter negative age
-  d <- merge_age_vector(d)
+  d <- merge_age_vector_oct(d)
   d <- d[which(d$age >= 0),]
   
   return(d)
